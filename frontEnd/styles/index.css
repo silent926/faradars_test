@@ -6,18 +6,7 @@
     --categoriesHover: #2339e6;
     --textColorDark: #080808;
 }
-.header-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 38px;
-    width: 100%;
-    background-color: var(--primaryColor);
-    display: flex;
-    justify-content: space-evenly; /* فاصله بین بخش‌های چپ و راست */
-    align-items: center; /* برای وسط‌چین عمودی */
-    padding: 0 10px; /* فاصله از لبه‌ها */
-}
+
 .header-1 #headerIcon {
     width: 17px;
     padding: 5px;
@@ -44,18 +33,23 @@
     margin-left: 640px;
 }
 .aroundOfFlag{
-   
-       
-    justify-content: center;  /* وسط‌چین افقی */
-    align-items: center;      /* وسط‌چین عمودی */
     color: var(--textColor);
-    font-weight: bold;        /* برای وضوح بیشتر می‌توانید به دلخواه اضافه کنید */
-    font-size: 16px;  
 }
 
+.header-1 {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 38px;
+
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--primaryColor);
+    display: inline-flex;
+
+}
 
 .leftIcns {
-    display: flex;
-    align-items: center;      /* عمودی وسط‌چین */
-    justify-content: center; 
+    align-items: center;
 }
