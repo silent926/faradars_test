@@ -1,0 +1,95 @@
+:root {
+    --textColor: #f0ecec;
+    --seconderyColor: #fca104;
+    --iconsBGHover: #0400ff;
+    --primaryColor: #3f5cde;
+    --categoriesHover: #2339e6;
+    --ColorDark: #080808;
+}
+.header-1 #headerIcon {
+    width: 14px;
+    padding: 5px;
+    padding-bottom: 6px;
+    padding-top: 7px;
+    border-radius: 5px;
+    background-color: var(--seconderyColor);
+    margin: 2.5px;
+    margin-top: 3px;
+    transition: all 0.4s ease-in-out;
+}
+.flag {
+    width: 50px;
+    height: 28px;
+    border: var(--textColor) solid 1px;
+    border-radius: 6px;
+    margin-top: 2.5px;
+}
+#headerIcon:hover {
+    text-overflow: clip;
+    transition: all 0.4 ease-in-out;
+    background-color: var(--iconsBGHover);
+}
+.aroundOfFlag {
+    color: var(--textColor);
+}
+body {
+    margin: 0;
+}
+.header-1 {
+    height: 34px;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--primaryColor);
+    display: inline-flex;
+}
+
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--ColorDark);
+    color: var(--textColor);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 150%;
+    top: 10%;
+}
+.tooltiptext::after {
+    position: absolute;
+    left: 100%;
+    right: 50%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--ColorDark) transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip {
+    transition: all 0.4s ease-in;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.line{
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: baseline;
+}
+.leftIcons{
+    display: inline-flex;
+}
+.textFlag{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items:flex-end;
+    padding-top: 28px;
+    margin: 10px;
+    font-size: 12px;
+}
