@@ -45,8 +45,9 @@ body {
 
 
 .tooltiptext {
+    opacity: 90%;
     visibility: hidden;
-    width: 120px;
+    width: 50px;
     background-color: var(--ColorDark);
     color: var(--textColor);
     text-align: center;
